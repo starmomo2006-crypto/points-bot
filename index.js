@@ -81,6 +81,7 @@ client.once('ready', () => {
     console.log(`Logged in as ${client.user.tag}`);
 });
 
-console.log("TOKEN =", process.env.TOKEN);
+console.log("TOKEN:", process.env.TOKEN);
+console.log("TYPE:", typeof process.env.TOKEN);
+console.log("LENGTH:", process.env.TOKEN?.length);
 client.login(process.env.TOKEN);
-console.log("TOKEN LENGTH =", process.env.TOKEN?.length);
