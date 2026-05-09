@@ -1,5 +1,6 @@
 const { Client, GatewayIntentBits } = require('discord.js');
-const sqlite3 = require('sqlite3').verbose();
+const Database = require('better-sqlite3');
+const db = new Database('data.db');
 
 const client = new Client({
     intents: [
