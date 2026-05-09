@@ -84,4 +84,5 @@ client.once('ready', () => {
 console.log("TOKEN:", process.env.TOKEN);
 console.log("TYPE:", typeof process.env.TOKEN);
 console.log("LENGTH:", process.env.TOKEN?.length);
+console.log("ALL ENV:", process.env);
 client.login(process.env.TOKEN);
