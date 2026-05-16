@@ -23,6 +23,9 @@ CREATE TABLE IF NOT EXISTS users (
 )
 `).run();
 
+db.run("DELETE FROM users");
+console.log("تم تصفير جميع النقاط");
+
 function getUser(userId) {
     let user = db.prepare("SELECT * FROM users WHERE userId = ?").get(userId);
 
