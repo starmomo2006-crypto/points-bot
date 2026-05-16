@@ -26,8 +26,6 @@ CREATE TABLE IF NOT EXISTS users (
     points INTEGER DEFAULT 0
 )
 `).run();
-db.prepare("DELETE FROM users").run();
-console.log("تم تصفير جميع النقاط");
 
 function getUser(userId) {
 
